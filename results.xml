@@ -1,0 +1,32 @@
+<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="0" time="16.285655000000002">
+<testsuite name="Logintest.spec.ts" timestamp="2026-10-27T13:43:35.658Z" hostname="chromium" tests="3" failures="0" skipped="0" time="33.835" errors="0">
+<testcase name="Lgin with valid credentials" classname="Logintest.spec.ts" time="10.341">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Logintest-Lgin-with-valid-credentials-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\Logintest-Lgin-with-valid-credentials-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="invalid login" classname="Logintest.spec.ts" time="10.861">
+<system-out>
+<![CDATA[The invalid messgae is  Login was unsuccessful. Please correct the errors and try again.
+
+[[ATTACHMENT|test-results\Logintest-invalid-login-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\Logintest-invalid-login-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="verify logout after successful login" classname="Logintest.spec.ts" time="12.633">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Logintest-verify-logout-after-successful-login-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\Logintest-verify-logout-after-successful-login-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

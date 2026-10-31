@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","10330","verify logout after successful login","chromium","2026-10-26","passed","2026-10-26","","logo.spec.ts","",""
+"","9241","Lgin with valid credentials","chromium","2026-10-26","passed","2026-10-26","","logo.spec.ts","",""
+"","9337","invalid login","chromium","2026-10-26","passed","2026-10-26","","Logintest.spec.ts","",""
+"","10209","verify logout after successful login","chromium","2026-10-26","passed","2026-10-26","","Logintest.spec.ts","",""
+"","9461","invalid login","chromium","2026-10-26","passed","2026-10-26","","logo.spec.ts","",""
+"","9223","Lgin with valid credentials","chromium","2026-10-26","passed","2026-10-26","","Logintest.spec.ts","",""
