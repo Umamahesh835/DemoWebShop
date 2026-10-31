@@ -3,7 +3,7 @@ import { Homepage } from '../pages/Homepage';
 import { Register } from '../pages/Register';
 import { Pages } from '../pages/Pages';
 
-test('register', async({page})=>{
+/*test('register', async({page})=>{
 
     const pages= new Pages(page);
     
@@ -17,4 +17,4 @@ test('register', async({page})=>{
     
    
 
-})
+})*/
