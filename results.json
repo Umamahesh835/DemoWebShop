@@ -3,9 +3,7 @@
     "argv": [
       "C:\\Program Files\\nodejs\\node.exe",
       "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\node_modules\\@playwright\\test\\cli.js",
-      "test",
-      "Logintest.spec.ts",
-      "--headed"
+      "test"
     ],
     "configFile": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\playwright.config.ts",
     "rootDir": "C:/Users/mahesh/Documents/Demo Web Shop/tests",
@@ -19,7 +17,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 3
+      "actualWorkers": 4
     },
     "preserveOutput": "always",
     "projects": [
@@ -28,7 +26,7 @@
         "repeatEach": 1,
         "retries": 2,
         "metadata": {
-          "actualWorkers": 3
+          "actualWorkers": 4
         },
         "id": "chromium",
         "name": "chromium",
@@ -48,7 +46,7 @@
         "repeatEach": 1,
         "retries": 2,
         "metadata": {
-          "actualWorkers": 3
+          "actualWorkers": 4
         },
         "name": "chromium",
         "testDir": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\tests",
@@ -71,8 +69,7 @@
           "deviceScaleFactor": 1,
           "isMobile": false,
           "hasTouch": false,
-          "defaultBrowserType": "chromium",
-          "headless": false
+          "defaultBrowserType": "chromium"
         },
         "dependencies": [],
         "ignoreSnapshots": false,
@@ -152,12 +149,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 10341,
+                  "duration": 9967,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-27T13:43:36.819Z",
+                  "startTime": "2026-10-31T08:15:56.922Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -197,7 +194,7 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 10861,
+                  "duration": 10400,
                   "errors": [],
                   "stdout": [
                     {
@@ -206,7 +203,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-27T13:43:36.809Z",
+                  "startTime": "2026-10-31T08:15:56.928Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -246,12 +243,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 2,
                   "status": "passed",
-                  "duration": 12633,
+                  "duration": 11707,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-27T13:43:36.807Z",
+                  "startTime": "2026-10-31T08:15:56.827Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -276,13 +273,205 @@
           "column": 5
         }
       ]
+    },
+    {
+      "title": "logo.spec.ts",
+      "file": "logo.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Lgin with valid credentials",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 9678,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T08:15:56.852Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\test-results\\logo-Lgin-with-valid-credentials-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\test-results\\logo-Lgin-with-valid-credentials-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "99106ad3eacf4bb6ed3f-c851100d2e862a8676f7",
+          "file": "logo.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "invalid login",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 6257,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "The invalid messgae is  Login was unsuccessful. Please correct the errors and try again.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T08:16:08.121Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\test-results\\logo-invalid-login-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\test-results\\logo-invalid-login-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "99106ad3eacf4bb6ed3f-343ec00aeedb068a7380",
+          "file": "logo.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "verify logout after successful login",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8289,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T08:16:08.444Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\test-results\\logo-verify-logout-after-successful-login-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\test-results\\logo-verify-logout-after-successful-login-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "99106ad3eacf4bb6ed3f-6946be43c60f818cc9e5",
+          "file": "logo.spec.ts",
+          "line": 30,
+          "column": 5
+        },
+        {
+          "title": "login with valid username and different password",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 7991,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T08:16:09.304Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\test-results\\logo-login-with-valid-username-and-different-password-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\test-results\\logo-login-with-valid-username-and-different-password-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "99106ad3eacf4bb6ed3f-97bb81ba49ee3bbb11a9",
+          "file": "logo.spec.ts",
+          "line": 46,
+          "column": 5
+        }
+      ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-27T13:43:35.333Z",
-    "duration": 16285.655,
-    "expected": 3,
+    "startTime": "2026-10-31T08:15:55.310Z",
+    "duration": 22716.245000000003,
+    "expected": 7,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
