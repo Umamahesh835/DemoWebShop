@@ -1,69 +1,59 @@
-<testsuites id="" name="" tests="7" failures="0" skipped="0" errors="0" time="22.716245000000004">
-<testsuite name="Logintest.spec.ts" timestamp="2026-10-31T08:15:55.426Z" hostname="chromium" tests="3" failures="0" skipped="0" time="32.074" errors="0">
-<testcase name="Lgin with valid credentials" classname="Logintest.spec.ts" time="9.967">
+<testsuites id="" name="" tests="6" failures="0" skipped="0" errors="0" time="18.809628">
+<testsuite name="Logintest.spec.ts" timestamp="2026-11-02T06:04:10.435Z" hostname="chromium" tests="6" failures="0" skipped="0" time="48.705" errors="0">
+<testcase name="verify login with valid credentials" classname="Logintest.spec.ts" time="8.726">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\Logintest-Lgin-with-valid-credentials-chromium\video.webm]]
+[[ATTACHMENT|test-results\Logintest-verify-login-with-valid-credentials-chromium\video.webm]]
 
-[[ATTACHMENT|test-results\Logintest-Lgin-with-valid-credentials-chromium\trace.zip]]
+[[ATTACHMENT|test-results\Logintest-verify-login-with-valid-credentials-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="invalid login" classname="Logintest.spec.ts" time="10.4">
-<system-out>
-<![CDATA[The invalid messgae is  Login was unsuccessful. Please correct the errors and try again.
-
-[[ATTACHMENT|test-results\Logintest-invalid-login-chromium\video.webm]]
-
-[[ATTACHMENT|test-results\Logintest-invalid-login-chromium\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="verify logout after successful login" classname="Logintest.spec.ts" time="11.707">
+<testcase name="Invalid password" classname="Logintest.spec.ts" time="9.897">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\Logintest-verify-logout-after-successful-login-chromium\video.webm]]
+[[ATTACHMENT|test-results\Logintest-Invalid-password-chromium\video.webm]]
 
-[[ATTACHMENT|test-results\Logintest-verify-logout-after-successful-login-chromium\trace.zip]]
+[[ATTACHMENT|test-results\Logintest-Invalid-password-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-</testsuite>
-<testsuite name="logo.spec.ts" timestamp="2026-10-31T08:15:55.426Z" hostname="chromium" tests="4" failures="0" skipped="0" time="32.215" errors="0">
-<testcase name="Lgin with valid credentials" classname="logo.spec.ts" time="9.678">
+<testcase name="Blank Email" classname="Logintest.spec.ts" time="9.509">
+<system-out>
+<![CDATA[Login was unsuccessful. Please correct the errors and try again.
+
+[[ATTACHMENT|test-results\Logintest-Blank-Email-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\Logintest-Blank-Email-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Forgot password navigation" classname="Logintest.spec.ts" time="11.599">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\logo-Lgin-with-valid-credentials-chromium\video.webm]]
+                Email with instructions has been sent to you.
+            
 
-[[ATTACHMENT|test-results\logo-Lgin-with-valid-credentials-chromium\trace.zip]]
+[[ATTACHMENT|test-results\Logintest-Forgot-password-navigation-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\Logintest-Forgot-password-navigation-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="invalid login" classname="logo.spec.ts" time="6.257">
+<testcase name="Blank Password" classname="Logintest.spec.ts" time="5.396">
 <system-out>
-<![CDATA[The invalid messgae is  Login was unsuccessful. Please correct the errors and try again.
+<![CDATA[Login was unsuccessful. Please correct the errors and try again.
 
-[[ATTACHMENT|test-results\logo-invalid-login-chromium\video.webm]]
+[[ATTACHMENT|test-results\Logintest-Blank-Password-chromium\video.webm]]
 
-[[ATTACHMENT|test-results\logo-invalid-login-chromium\trace.zip]]
+[[ATTACHMENT|test-results\Logintest-Blank-Password-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="verify logout after successful login" classname="logo.spec.ts" time="8.289">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\logo-verify-logout-after-successful-login-chromium\video.webm]]
-
-[[ATTACHMENT|test-results\logo-verify-logout-after-successful-login-chromium\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="login with valid username and different password" classname="logo.spec.ts" time="7.991">
+<testcase name="multiple tabs" classname="Logintest.spec.ts" time="3.578">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\logo-login-with-valid-username-and-different-password-chromium\video.webm]]
-
-[[ATTACHMENT|test-results\logo-login-with-valid-username-and-different-password-chromium\trace.zip]]
+[[ATTACHMENT|test-results\Logintest-multiple-tabs-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
