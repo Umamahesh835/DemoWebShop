@@ -3,10 +3,11 @@
     "argv": [
       "C:\\Program Files\\nodejs\\node.exe",
       "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\node_modules\\@playwright\\test\\cli.js",
-      "test"
+      "test",
+      "--headed"
     ],
     "configFile": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\playwright.config.ts",
-    "rootDir": "C:/Users/mahesh/Documents/Demo Web Shop/tests",
+    "rootDir": "C:/Users/mahesh/Documents/Demo Web Shop/src/tests",
     "failOnFlakyTests": false,
     "forbidOnly": false,
     "fullyParallel": true,
@@ -30,7 +31,7 @@
         },
         "id": "chromium",
         "name": "chromium",
-        "testDir": "C:/Users/mahesh/Documents/Demo Web Shop/tests",
+        "testDir": "C:/Users/mahesh/Documents/Demo Web Shop/src/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -49,8 +50,8 @@
           "actualWorkers": 4
         },
         "name": "chromium",
-        "testDir": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\tests",
-        "snapshotDir": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\tests",
+        "testDir": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\src\\tests",
+        "snapshotDir": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\src\\tests",
         "testIgnore": [],
         "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
         "timeout": 30000,
@@ -69,7 +70,8 @@
           "deviceScaleFactor": 1,
           "isMobile": false,
           "hasTouch": false,
-          "defaultBrowserType": "chromium"
+          "defaultBrowserType": "chromium",
+          "headless": false
         },
         "dependencies": [],
         "ignoreSnapshots": false,
@@ -134,7 +136,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "Lgin with valid credentials",
+          "title": "verify login with valid credentials",
           "ok": true,
           "tags": [],
           "tests": [
@@ -149,23 +151,23 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 9967,
+                  "duration": 8726,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-31T08:15:56.922Z",
+                  "startTime": "2026-11-02T06:04:11.412Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\test-results\\Logintest-Lgin-with-valid-credentials-chromium\\video.webm"
+                      "path": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\test-results\\Logintest-verify-login-with-valid-credentials-chromium\\video.webm"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\test-results\\Logintest-Lgin-with-valid-credentials-chromium\\trace.zip"
+                      "path": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\test-results\\Logintest-verify-login-with-valid-credentials-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -173,13 +175,13 @@
               "status": "expected"
             }
           ],
-          "id": "f558e11d434b0eddea03-9f158c627a3eb9045942",
+          "id": "f558e11d434b0eddea03-e780e297f083a19e8ced",
           "file": "Logintest.spec.ts",
-          "line": 7,
+          "line": 6,
           "column": 5
         },
         {
-          "title": "invalid login",
+          "title": "Invalid password",
           "ok": true,
           "tags": [],
           "tests": [
@@ -194,27 +196,23 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 10400,
+                  "duration": 9897,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "The invalid messgae is  Login was unsuccessful. Please correct the errors and try again.\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-31T08:15:56.928Z",
+                  "startTime": "2026-11-02T06:04:11.396Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\test-results\\Logintest-invalid-login-chromium\\video.webm"
+                      "path": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\test-results\\Logintest-Invalid-password-chromium\\video.webm"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\test-results\\Logintest-invalid-login-chromium\\trace.zip"
+                      "path": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\test-results\\Logintest-Invalid-password-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -222,13 +220,13 @@
               "status": "expected"
             }
           ],
-          "id": "f558e11d434b0eddea03-87bedffcba9dac3dae20",
+          "id": "f558e11d434b0eddea03-88f573e12f0e8f931546",
           "file": "Logintest.spec.ts",
-          "line": 23,
+          "line": 17,
           "column": 5
         },
         {
-          "title": "verify logout after successful login",
+          "title": "Blank Email",
           "ok": true,
           "tags": [],
           "tests": [
@@ -243,125 +241,27 @@
                   "workerIndex": 2,
                   "parallelIndex": 2,
                   "status": "passed",
-                  "duration": 11707,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-31T08:15:56.827Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\test-results\\Logintest-verify-logout-after-successful-login-chromium\\video.webm"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\test-results\\Logintest-verify-logout-after-successful-login-chromium\\trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "f558e11d434b0eddea03-4e048b54a1a2936e00d1",
-          "file": "Logintest.spec.ts",
-          "line": 35,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "logo.spec.ts",
-      "file": "logo.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Lgin with valid credentials",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 3,
-                  "parallelIndex": 3,
-                  "status": "passed",
-                  "duration": 9678,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-31T08:15:56.852Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\test-results\\logo-Lgin-with-valid-credentials-chromium\\video.webm"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\test-results\\logo-Lgin-with-valid-credentials-chromium\\trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "99106ad3eacf4bb6ed3f-c851100d2e862a8676f7",
-          "file": "logo.spec.ts",
-          "line": 4,
-          "column": 5
-        },
-        {
-          "title": "invalid login",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 3,
-                  "parallelIndex": 3,
-                  "status": "passed",
-                  "duration": 6257,
+                  "duration": 9509,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "The invalid messgae is  Login was unsuccessful. Please correct the errors and try again.\n"
+                      "text": "Login was unsuccessful. Please correct the errors and try again.\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-31T08:16:08.121Z",
+                  "startTime": "2026-11-02T06:04:11.417Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\test-results\\logo-invalid-login-chromium\\video.webm"
+                      "path": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\test-results\\Logintest-Blank-Email-chromium\\video.webm"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\test-results\\logo-invalid-login-chromium\\trace.zip"
+                      "path": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\test-results\\Logintest-Blank-Email-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -369,13 +269,62 @@
               "status": "expected"
             }
           ],
-          "id": "99106ad3eacf4bb6ed3f-343ec00aeedb068a7380",
-          "file": "logo.spec.ts",
-          "line": 18,
+          "id": "f558e11d434b0eddea03-14a0a1dadaf129355acf",
+          "file": "Logintest.spec.ts",
+          "line": 32,
           "column": 5
         },
         {
-          "title": "verify logout after successful login",
+          "title": "Forgot password navigation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 11599,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n                Email with instructions has been sent to you.\n            \n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T06:04:11.406Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\test-results\\Logintest-Forgot-password-navigation-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\test-results\\Logintest-Forgot-password-navigation-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f558e11d434b0eddea03-4bd47c271aef42a252ca",
+          "file": "Logintest.spec.ts",
+          "line": 43,
+          "column": 5
+        },
+        {
+          "title": "Blank Password",
           "ok": true,
           "tags": [],
           "tests": [
@@ -390,23 +339,27 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 8289,
+                  "duration": 5396,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "Login was unsuccessful. Please correct the errors and try again.\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-31T08:16:08.444Z",
+                  "startTime": "2026-11-02T06:04:22.774Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\test-results\\logo-verify-logout-after-successful-login-chromium\\video.webm"
+                      "path": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\test-results\\Logintest-Blank-Password-chromium\\video.webm"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\test-results\\logo-verify-logout-after-successful-login-chromium\\trace.zip"
+                      "path": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\test-results\\Logintest-Blank-Password-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -414,13 +367,13 @@
               "status": "expected"
             }
           ],
-          "id": "99106ad3eacf4bb6ed3f-6946be43c60f818cc9e5",
-          "file": "logo.spec.ts",
-          "line": 30,
+          "id": "f558e11d434b0eddea03-6a71bfc9818f11860afa",
+          "file": "Logintest.spec.ts",
+          "line": 60,
           "column": 5
         },
         {
-          "title": "login with valid username and different password",
+          "title": "multiple tabs",
           "ok": true,
           "tags": [],
           "tests": [
@@ -432,26 +385,21 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
-                  "parallelIndex": 1,
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
                   "status": "passed",
-                  "duration": 7991,
+                  "duration": 3578,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-31T08:16:09.304Z",
+                  "startTime": "2026-11-02T06:04:23.322Z",
                   "annotations": [],
                   "attachments": [
                     {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\test-results\\logo-login-with-valid-username-and-different-password-chromium\\video.webm"
-                    },
-                    {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\test-results\\logo-login-with-valid-username-and-different-password-chromium\\trace.zip"
+                      "path": "C:\\Users\\mahesh\\Documents\\Demo Web Shop\\test-results\\Logintest-multiple-tabs-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -459,9 +407,9 @@
               "status": "expected"
             }
           ],
-          "id": "99106ad3eacf4bb6ed3f-97bb81ba49ee3bbb11a9",
-          "file": "logo.spec.ts",
-          "line": 46,
+          "id": "f558e11d434b0eddea03-40c048e0f8d331d8ca87",
+          "file": "Logintest.spec.ts",
+          "line": 71,
           "column": 5
         }
       ]
@@ -469,9 +417,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-31T08:15:55.310Z",
-    "duration": 22716.245000000003,
-    "expected": 7,
+    "startTime": "2026-11-02T06:04:10.336Z",
+    "duration": 18809.628,
+    "expected": 6,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
