@@ -1,0 +1,10 @@
+the product name is : Smartphone
+the cart text is : The product has been added to your shopping cart
+Screenshot captured: biiling
+You will pay by COD
+the product price : 100.00
+The product quantity : 
+                            Qty.:
+                                3
+                        
+the total of product price : 300.00

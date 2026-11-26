@@ -1,0 +1,234 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Checkout.spec.ts >> checkout process
+- Location: src\tests\Checkout.spec.ts:8:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: locator.click: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for getByRole('radio', { name: 'Ground (0.00)' })
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=f7e2]:
+  - generic [ref=f7e3]:
+    - generic [ref=f7e4]:
+      - link [ref=f7e6] [cursor=pointer]:
+        - /url: /
+        - img "Tricentis Demo Web Shop" [ref=f7e7]
+      - list [ref=f7e10]:
+        - listitem [ref=f7e11]:
+          - link "haplap@gmail.com" [ref=f7e12] [cursor=pointer]:
+            - /url: /customer/info
+        - listitem [ref=f7e13]:
+          - link "Log out" [ref=f7e14] [cursor=pointer]:
+            - /url: /logout
+        - listitem [ref=f7e15]:
+          - link "Shopping cart (5)" [ref=f7e16] [cursor=pointer]:
+            - /url: /cart
+            - generic [ref=f7e17]: Shopping cart
+            - generic [ref=f7e18]: (5)
+        - listitem [ref=f7e19]:
+          - link "Wishlist (0)" [ref=f7e20] [cursor=pointer]:
+            - /url: /wishlist
+            - generic [ref=f7e21]: Wishlist
+            - generic [ref=f7e22]: (0)
+      - generic [ref=f7e24]:
+        - status [ref=f7e25]
+        - textbox [ref=f7e26]: Search store
+        - button "Search" [ref=f7e27] [cursor=pointer]
+    - list [ref=f7e29]:
+      - listitem [ref=f7e30]:
+        - link "Books" [ref=f7e31] [cursor=pointer]:
+          - /url: /books
+      - listitem [ref=f7e32]:
+        - link "Computers" [ref=f7e33] [cursor=pointer]:
+          - /url: /computers
+      - listitem [ref=f7e34]:
+        - link "Electronics" [ref=f7e35] [cursor=pointer]:
+          - /url: /electronics
+      - listitem [ref=f7e36]:
+        - link "Apparel & Shoes" [ref=f7e37] [cursor=pointer]:
+          - /url: /apparel-shoes
+      - listitem [ref=f7e38]:
+        - link "Digital downloads" [ref=f7e39] [cursor=pointer]:
+          - /url: /digital-downloads
+      - listitem [ref=f7e40]:
+        - link "Jewelry" [ref=f7e41] [cursor=pointer]:
+          - /url: /jewelry
+      - listitem [ref=f7e42]:
+        - link "Gift Cards" [ref=f7e43] [cursor=pointer]:
+          - /url: /gift-cards
+    - generic [ref=f7e45]:
+      - heading "Checkout" [level=1] [ref=f7e47]
+      - list [ref=f7e49]:
+        - listitem [ref=f7e50]:
+          - generic [ref=f7e51]:
+            - generic [ref=f7e52]: "1"
+            - heading "Billing address" [level=2] [ref=f7e53]
+            - text: .
+          - generic [ref=f7e54]:
+            - generic [ref=f7e58]:
+              - text: Select a billing address from your address book or enter a new address.
+              - combobox "Select a billing address from your address book or enter a new address." [ref=f7e60]:
+                - option "Mahesh Reddy, pocharam, hyderabad 500088, India" [selected]
+                - option "New Address"
+            - button "Continue" [ref=f7e62] [cursor=pointer]
+        - listitem [ref=f7e63]:
+          - generic [ref=f7e64]:
+            - generic [ref=f7e65]: "2"
+            - heading "Shipping address" [level=2] [ref=f7e66]
+            - text: .
+        - listitem [ref=f7e67]:
+          - generic [ref=f7e68]:
+            - generic [ref=f7e69]: "3"
+            - heading "Shipping method" [level=2] [ref=f7e70]
+            - text: .
+        - listitem [ref=f7e71]:
+          - generic [ref=f7e72]:
+            - generic [ref=f7e73]: "4"
+            - heading "Payment method" [level=2] [ref=f7e74]
+            - text: .
+        - listitem [ref=f7e75]:
+          - generic [ref=f7e76]:
+            - generic [ref=f7e77]: "5"
+            - heading "Payment information" [level=2] [ref=f7e78]
+            - text: .
+        - listitem [ref=f7e79]:
+          - generic [ref=f7e80]:
+            - generic [ref=f7e81]: "6"
+            - heading "Confirm order" [level=2] [ref=f7e82]
+            - text: .
+  - generic [ref=f7e83]:
+    - generic [ref=f7e84]:
+      - generic [ref=f7e85]:
+        - heading "Information" [level=3] [ref=f7e86]
+        - list [ref=f7e87]:
+          - listitem [ref=f7e88]:
+            - link "Sitemap" [ref=f7e89] [cursor=pointer]:
+              - /url: /sitemap
+          - listitem [ref=f7e90]:
+            - link "Shipping & Returns" [ref=f7e91] [cursor=pointer]:
+              - /url: /shipping-returns
+          - listitem [ref=f7e92]:
+            - link "Privacy Notice" [ref=f7e93] [cursor=pointer]:
+              - /url: /privacy-policy
+          - listitem [ref=f7e94]:
+            - link "Conditions of Use" [ref=f7e95] [cursor=pointer]:
+              - /url: /conditions-of-use
+          - listitem [ref=f7e96]:
+            - link "About us" [ref=f7e97] [cursor=pointer]:
+              - /url: /about-us
+          - listitem [ref=f7e98]:
+            - link "Contact us" [ref=f7e99] [cursor=pointer]:
+              - /url: /contactus
+      - generic [ref=f7e100]:
+        - heading "Customer service" [level=3] [ref=f7e101]
+        - list [ref=f7e102]:
+          - listitem [ref=f7e103]:
+            - link "Search" [ref=f7e104] [cursor=pointer]:
+              - /url: /search
+          - listitem [ref=f7e105]:
+            - link "News" [ref=f7e106] [cursor=pointer]:
+              - /url: /news
+          - listitem [ref=f7e107]:
+            - link "Blog" [ref=f7e108] [cursor=pointer]:
+              - /url: /blog
+          - listitem [ref=f7e109]:
+            - link "Recently viewed products" [ref=f7e110] [cursor=pointer]:
+              - /url: /recentlyviewedproducts
+          - listitem [ref=f7e111]:
+            - link "Compare products list" [ref=f7e112] [cursor=pointer]:
+              - /url: /compareproducts
+          - listitem [ref=f7e113]:
+            - link "New products" [ref=f7e114] [cursor=pointer]:
+              - /url: /newproducts
+      - generic [ref=f7e115]:
+        - heading "My account" [level=3] [ref=f7e116]
+        - list [ref=f7e117]:
+          - listitem [ref=f7e118]:
+            - link "My account" [ref=f7e119] [cursor=pointer]:
+              - /url: /customer/info
+          - listitem [ref=f7e120]:
+            - link "Orders" [ref=f7e121] [cursor=pointer]:
+              - /url: /customer/orders
+          - listitem [ref=f7e122]:
+            - link "Addresses" [ref=f7e123] [cursor=pointer]:
+              - /url: /customer/addresses
+          - listitem [ref=f7e124]:
+            - link "Shopping cart" [ref=f7e125] [cursor=pointer]:
+              - /url: /cart
+          - listitem [ref=f7e126]:
+            - link "Wishlist" [ref=f7e127] [cursor=pointer]:
+              - /url: /wishlist
+      - generic [ref=f7e128]:
+        - heading "Follow us" [level=3] [ref=f7e129]
+        - list [ref=f7e130]:
+          - listitem [ref=f7e131]:
+            - link "Facebook" [ref=f7e132] [cursor=pointer]:
+              - /url: http://www.facebook.com/nopCommerce
+          - listitem [ref=f7e133]:
+            - link "Twitter" [ref=f7e134] [cursor=pointer]:
+              - /url: https://twitter.com/nopCommerce
+          - listitem [ref=f7e135]:
+            - link "RSS" [ref=f7e136] [cursor=pointer]:
+              - /url: /news/rss/1
+          - listitem [ref=f7e137]:
+            - link "YouTube" [ref=f7e138] [cursor=pointer]:
+              - /url: http://www.youtube.com/user/nopCommerce
+          - listitem [ref=f7e139]:
+            - link "Google+" [ref=f7e140] [cursor=pointer]:
+              - /url: https://plus.google.com/+nopcommerce
+    - generic [ref=f7e141]:
+      - text: Powered by
+      - link "nopCommerce" [ref=f7e142] [cursor=pointer]:
+        - /url: http://www.nopcommerce.com/
+    - generic [ref=f7e143]: Copyright © 2026 Tricentis Demo Web Shop. All rights reserved.
+```
+
+# Test source
+
+```ts
+  1  | import { Page,Locator } from '@playwright/test';
+  2  | 
+  3  | export class ShippingMethod{
+  4  |     readonly page:Page;
+  5  |     readonly Ground:Locator;
+  6  |     readonly NextDayAir:Locator;
+  7  |     readonly secondDayAir:Locator;
+  8  | 
+  9  |     constructor(page:Page){
+  10 |         this.page = page;
+  11 |         this.Ground = page.getByRole('radio',{name:'Ground (0.00)'});
+  12 |         this.NextDayAir = page.getByRole('radio',{name:'Next Day Air (0.00)'});
+  13 |         this.secondDayAir = page.getByRole('radio',{name:'2nd Day Air (0.00)'});
+  14 | 
+  15 |     }
+  16 | 
+  17 |     async clickGround(){
+> 18 |         await this.Ground.click();
+     |                           ^ Error: locator.click: Test timeout of 30000ms exceeded.
+  19 |     }
+  20 |     async clickNextDayAir(){
+  21 |         await this.NextDayAir.click();
+  22 |     }
+  23 |     async clickSecondDayAir(){
+  24 |         await this.secondDayAir.click();
+  25 |     }
+  26 | }
+```

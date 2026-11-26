@@ -30,7 +30,7 @@ export class ContextMenu{
         await this.Computers.click();
     }
     async clickElectronics(){
-        await this.Electronics.click();
+        await this.Electronics.first().click();
     }
     async clickApparelAndShoes(){
         await this.ApparelAndShoes.click();

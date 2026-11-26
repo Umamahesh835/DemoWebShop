@@ -19,14 +19,10 @@ test('Invalid password', async({page,
     homepage,
     loginPage,})=>{
     await page.goto('https://demowebshop.tricentis.com/');
-
-      
-
     await homepage.clickLogin();
     await loginPage.Loginuser('haplap@gmail.com', 'hp@1234');
     await page.waitForLoadState('networkidle');
     await loginPage.clickLogIn();
-
     await loginPage.getUnsuccessfulloginmsg();
     await ScreenshotUtil.captureScreenshot(page, 'InvalidPassword');
 })
@@ -70,12 +66,3 @@ test('Blank Password', async({page,
       
 })
 
-test('multiple tabs', async({browser})=>{
-
-    const context = await browser.newContext();
-    const page = await context.newPage();
-
-    await page.goto('https://demowebshop.tricentis.com/');
-
-
-})

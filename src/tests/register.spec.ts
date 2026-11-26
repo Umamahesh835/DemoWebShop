@@ -1,7 +1,7 @@
 import {test, expect} from '@playwright/test';
 import { Homepage } from '../pages/Homepage';
 import { Register } from '../pages/Register';
-import { Pages } from '../pages/Pages';
+
 
 /*test('register', async({page})=>{
 

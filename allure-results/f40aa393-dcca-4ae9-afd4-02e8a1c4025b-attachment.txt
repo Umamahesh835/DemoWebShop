@@ -1,0 +1,2 @@
+the product name is : Smartphone
+the cart text is : The product has been added to your shopping cart
