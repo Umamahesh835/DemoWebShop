@@ -6,6 +6,14 @@ import { Register } from '../pages/Register';
 import { ContextMenu } from '../pages/ContextMenu';
 import { Electronics } from '../pages/Electronics';
 import { Camera_Photo } from '../pages/Camera_Photo';
+import { CellPhones } from '../pages/CellPhones';
+import { ShoppingCart } from '../pages/ShoppingCart';
+import { BillingAddress } from '../pages/BillingAddress';
+import { ShippingAddress } from '../pages/ShippingAddress';
+import { ShippingMethod } from '../pages/ShippingMethod';
+import { PaymentMethod } from '../pages/PaymentMethod';
+import { paymentInformation } from '../pages/PaymentInformation';
+import { ConfirmOrder } from '../pages/ConfirmOrder';
 
 
 type PageFixtures = {
@@ -16,7 +24,14 @@ type PageFixtures = {
     contextMenu: ContextMenu;
     electronics: Electronics;
     cameraPhoto: Camera_Photo;
-    
+    cellPhones: CellPhones;
+    shoppingcart:ShoppingCart;
+    billingAddress:BillingAddress;
+    shippingAddress: ShippingAddress;
+    shippingMethod: ShippingMethod;
+    paymentMethod: PaymentMethod;
+    paymentInformation: paymentInformation;
+    confirmOrder: ConfirmOrder;
 }
 
 export const test = base.extend<PageFixtures>({
@@ -42,4 +57,28 @@ export const test = base.extend<PageFixtures>({
     cameraPhoto: async ({ page }, use) => {
         await use(new Camera_Photo(page));
     },
+    cellPhones: async ({ page }, use) => {
+        await use(new CellPhones(page));
+    },
+    shoppingcart: async ({ page }, use) => {
+        await use(new ShoppingCart(page));
+    },
+    billingAddress: async({page}, use) => {
+        await use(new BillingAddress(page));
+    },
+    shippingAddress: async ({ page }, use) => {
+        await use(new ShippingAddress(page));
+    },
+    shippingMethod: async ({ page }, use) => {
+        await use(new ShippingMethod(page));
+    },
+    paymentMethod: async ({ page }, use) => {
+        await use(new PaymentMethod(page));
+    },
+    paymentInformation: async ({ page }, use) => {
+        await use(new paymentInformation(page));
+    },
+    confirmOrder: async ({ page }, use) => {
+        await use(new ConfirmOrder(page));
+    }
 });

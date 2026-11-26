@@ -1,0 +1,260 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Checkout.spec.ts >> checkout process
+- Location: src\tests\Checkout.spec.ts:8:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=f7e2]:
+  - generic [ref=f7e3]:
+    - generic [ref=f7e4]:
+      - link [ref=f7e6] [cursor=pointer]:
+        - /url: /
+        - img "Tricentis Demo Web Shop" [ref=f7e7]
+      - list [ref=f7e10]:
+        - listitem [ref=f7e11]:
+          - link "haplap@gmail.com" [ref=f7e12] [cursor=pointer]:
+            - /url: /customer/info
+        - listitem [ref=f7e13]:
+          - link "Log out" [ref=f7e14] [cursor=pointer]:
+            - /url: /logout
+        - listitem [ref=f7e15]:
+          - link "Shopping cart (1)" [ref=f7e16] [cursor=pointer]:
+            - /url: /cart
+            - generic [ref=f7e17]: Shopping cart
+            - generic [ref=f7e18]: (1)
+        - listitem [ref=f7e19]:
+          - link "Wishlist (0)" [ref=f7e20] [cursor=pointer]:
+            - /url: /wishlist
+            - generic [ref=f7e21]: Wishlist
+            - generic [ref=f7e22]: (0)
+      - generic [ref=f7e24]:
+        - status [ref=f7e25]
+        - textbox [ref=f7e26]: Search store
+        - button "Search" [ref=f7e27] [cursor=pointer]
+    - list [ref=f7e29]:
+      - listitem [ref=f7e30]:
+        - link "Books" [ref=f7e31] [cursor=pointer]:
+          - /url: /books
+      - listitem [ref=f7e32]:
+        - link "Computers" [ref=f7e33] [cursor=pointer]:
+          - /url: /computers
+      - listitem [ref=f7e34]:
+        - link "Electronics" [ref=f7e35] [cursor=pointer]:
+          - /url: /electronics
+      - listitem [ref=f7e36]:
+        - link "Apparel & Shoes" [ref=f7e37] [cursor=pointer]:
+          - /url: /apparel-shoes
+      - listitem [ref=f7e38]:
+        - link "Digital downloads" [ref=f7e39] [cursor=pointer]:
+          - /url: /digital-downloads
+      - listitem [ref=f7e40]:
+        - link "Jewelry" [ref=f7e41] [cursor=pointer]:
+          - /url: /jewelry
+      - listitem [ref=f7e42]:
+        - link "Gift Cards" [ref=f7e43] [cursor=pointer]:
+          - /url: /gift-cards
+    - generic [ref=f7e45]:
+      - heading "Checkout" [level=1] [ref=f7e47]
+      - list [ref=f7e49]:
+        - listitem [ref=f7e50]:
+          - generic [ref=f7e51] [cursor=pointer]:
+            - generic [ref=f7e52]: "1"
+            - heading "Billing address" [level=2] [ref=f7e53]
+            - text: .
+        - listitem [ref=f7e54]:
+          - generic [ref=f7e55] [cursor=pointer]:
+            - generic [ref=f7e56]: "2"
+            - heading "Shipping address" [level=2] [ref=f7e57]
+            - text: .
+        - listitem [ref=f7e58]:
+          - generic [ref=f7e59] [cursor=pointer]:
+            - generic [ref=f7e60]: "3"
+            - heading "Shipping method" [level=2] [ref=f7e61]
+            - text: .
+        - listitem [ref=f7e62]:
+          - generic [ref=f7e63] [cursor=pointer]:
+            - generic [ref=f7e64]: "4"
+            - heading "Payment method" [level=2] [ref=f7e65]
+            - text: .
+        - listitem [ref=f7e66]:
+          - generic [ref=f7e67] [cursor=pointer]:
+            - generic [ref=f7e68]: "5"
+            - heading "Payment information" [level=2] [ref=f7e69]
+            - text: .
+        - listitem [ref=f7e70]:
+          - generic [ref=f7e71]:
+            - generic [ref=f7e72]: "6"
+            - heading "Confirm order" [level=2] [ref=f7e73]
+            - text: .
+          - generic [ref=f7e74]:
+            - generic [ref=f7e79]:
+              - generic [ref=f7e80]:
+                - list [ref=f7e81]:
+                  - listitem [ref=f7e82]:
+                    - strong [ref=f7e83]: Billing Address
+                  - listitem [ref=f7e84]: Mahesh Reddy
+                  - listitem [ref=f7e85]: "Email: haplap@gmail.com"
+                  - listitem [ref=f7e86]: "Phone: 6304302114"
+                  - listitem [ref=f7e87]: "Fax:"
+                  - listitem [ref=f7e88]: pocharam
+                  - listitem [ref=f7e89]: hyderabad , 500088
+                  - listitem [ref=f7e90]: India
+                  - listitem [ref=f7e91]:
+                    - strong [ref=f7e92]: Payment Method
+                  - listitem [ref=f7e93]: Cash On Delivery (COD)
+                - list [ref=f7e94]:
+                  - listitem [ref=f7e95]:
+                    - strong [ref=f7e96]: Shipping Address
+                  - listitem [ref=f7e97]: Mahesh Reddy
+                  - listitem [ref=f7e98]: "Email: haplap@gmail.com"
+                  - listitem [ref=f7e99]: "Phone: 6304302114"
+                  - listitem [ref=f7e100]: "Fax:"
+                  - listitem [ref=f7e101]: pocharam
+                  - listitem [ref=f7e102]: hyderabad , 500088
+                  - listitem [ref=f7e103]: India
+                  - listitem [ref=f7e104]:
+                    - strong [ref=f7e105]: Shipping Method
+                  - listitem [ref=f7e106]: Ground
+              - generic [ref=f7e107]:
+                - table [ref=f7e108]:
+                  - rowgroup [ref=f7e115]:
+                    - row [ref=f7e116]:
+                      - columnheader [ref=f7e117]
+                      - columnheader "Product(s)" [ref=f7e118]
+                      - columnheader "Price" [ref=f7e119]
+                      - columnheader "Qty." [ref=f7e120]
+                      - columnheader "Total" [ref=f7e121]
+                  - rowgroup [ref=f7e122]:
+                    - row [ref=f7e123]:
+                      - cell [ref=f7e124]:
+                        - img "Picture of Smartphone" [ref=f7e125]
+                      - cell [ref=f7e126]:
+                        - link "Smartphone" [ref=f7e127] [cursor=pointer]:
+                          - /url: /smartphone
+                      - cell "100.00" [ref=f7e128]
+                      - cell "1" [ref=f7e129]
+                      - cell "100.00" [ref=f7e130]
+                - table [ref=f7e136]:
+                  - rowgroup [ref=f7e137]:
+                    - row [ref=f7e138]:
+                      - cell "Sub-Total:" [ref=f7e139]
+                      - cell "100.00" [ref=f7e140]
+                    - row [ref=f7e142]:
+                      - 'cell "Shipping: (Ground)" [ref=f7e143]'
+                      - cell "0.00" [ref=f7e144]
+                    - row [ref=f7e146]:
+                      - cell "Payment method additional fee:" [ref=f7e147]
+                      - cell "7.00" [ref=f7e148]
+                    - row [ref=f7e150]:
+                      - cell "Tax:" [ref=f7e151]
+                      - cell "0.00" [ref=f7e152]
+                    - row [ref=f7e154]:
+                      - cell "Total:" [ref=f7e155]
+                      - cell [ref=f7e156]:
+                        - strong [ref=f7e159]: "107.00"
+            - generic [ref=f7e160]:
+              - paragraph [ref=f7e161]:
+                - link "Back" [ref=f7e162] [cursor=pointer]:
+                  - /url: "#"
+              - button "Confirm" [disabled] [ref=f7e163] [cursor=pointer]
+              - text: Submitting order information...
+  - generic [ref=f7e164]:
+    - generic [ref=f7e165]:
+      - generic [ref=f7e166]:
+        - heading "Information" [level=3] [ref=f7e167]
+        - list [ref=f7e168]:
+          - listitem [ref=f7e169]:
+            - link "Sitemap" [ref=f7e170] [cursor=pointer]:
+              - /url: /sitemap
+          - listitem [ref=f7e171]:
+            - link "Shipping & Returns" [ref=f7e172] [cursor=pointer]:
+              - /url: /shipping-returns
+          - listitem [ref=f7e173]:
+            - link "Privacy Notice" [ref=f7e174] [cursor=pointer]:
+              - /url: /privacy-policy
+          - listitem [ref=f7e175]:
+            - link "Conditions of Use" [ref=f7e176] [cursor=pointer]:
+              - /url: /conditions-of-use
+          - listitem [ref=f7e177]:
+            - link "About us" [ref=f7e178] [cursor=pointer]:
+              - /url: /about-us
+          - listitem [ref=f7e179]:
+            - link "Contact us" [ref=f7e180] [cursor=pointer]:
+              - /url: /contactus
+      - generic [ref=f7e181]:
+        - heading "Customer service" [level=3] [ref=f7e182]
+        - list [ref=f7e183]:
+          - listitem [ref=f7e184]:
+            - link "Search" [ref=f7e185] [cursor=pointer]:
+              - /url: /search
+          - listitem [ref=f7e186]:
+            - link "News" [ref=f7e187] [cursor=pointer]:
+              - /url: /news
+          - listitem [ref=f7e188]:
+            - link "Blog" [ref=f7e189] [cursor=pointer]:
+              - /url: /blog
+          - listitem [ref=f7e190]:
+            - link "Recently viewed products" [ref=f7e191] [cursor=pointer]:
+              - /url: /recentlyviewedproducts
+          - listitem [ref=f7e192]:
+            - link "Compare products list" [ref=f7e193] [cursor=pointer]:
+              - /url: /compareproducts
+          - listitem [ref=f7e194]:
+            - link "New products" [ref=f7e195] [cursor=pointer]:
+              - /url: /newproducts
+      - generic [ref=f7e196]:
+        - heading "My account" [level=3] [ref=f7e197]
+        - list [ref=f7e198]:
+          - listitem [ref=f7e199]:
+            - link "My account" [ref=f7e200] [cursor=pointer]:
+              - /url: /customer/info
+          - listitem [ref=f7e201]:
+            - link "Orders" [ref=f7e202] [cursor=pointer]:
+              - /url: /customer/orders
+          - listitem [ref=f7e203]:
+            - link "Addresses" [ref=f7e204] [cursor=pointer]:
+              - /url: /customer/addresses
+          - listitem [ref=f7e205]:
+            - link "Shopping cart" [ref=f7e206] [cursor=pointer]:
+              - /url: /cart
+          - listitem [ref=f7e207]:
+            - link "Wishlist" [ref=f7e208] [cursor=pointer]:
+              - /url: /wishlist
+      - generic [ref=f7e209]:
+        - heading "Follow us" [level=3] [ref=f7e210]
+        - list [ref=f7e211]:
+          - listitem [ref=f7e212]:
+            - link "Facebook" [ref=f7e213] [cursor=pointer]:
+              - /url: http://www.facebook.com/nopCommerce
+          - listitem [ref=f7e214]:
+            - link "Twitter" [ref=f7e215] [cursor=pointer]:
+              - /url: https://twitter.com/nopCommerce
+          - listitem [ref=f7e216]:
+            - link "RSS" [ref=f7e217] [cursor=pointer]:
+              - /url: /news/rss/1
+          - listitem [ref=f7e218]:
+            - link "YouTube" [ref=f7e219] [cursor=pointer]:
+              - /url: http://www.youtube.com/user/nopCommerce
+          - listitem [ref=f7e220]:
+            - link "Google+" [ref=f7e221] [cursor=pointer]:
+              - /url: https://plus.google.com/+nopcommerce
+    - generic [ref=f7e222]:
+      - text: Powered by
+      - link "nopCommerce" [ref=f7e223] [cursor=pointer]:
+        - /url: http://www.nopcommerce.com/
+    - generic [ref=f7e224]: Copyright © 2026 Tricentis Demo Web Shop. All rights reserved.
+```

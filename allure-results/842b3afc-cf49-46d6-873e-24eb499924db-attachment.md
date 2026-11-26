@@ -1,0 +1,205 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Checkout.spec.ts >> checkout process
+- Location: src\tests\Checkout.spec.ts:8:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=f7e2]:
+  - generic [ref=f7e3]:
+    - generic [ref=f7e4]:
+      - link [ref=f7e6] [cursor=pointer]:
+        - /url: /
+        - img "Tricentis Demo Web Shop" [ref=f7e7]
+      - list [ref=f7e10]:
+        - listitem [ref=f7e11]:
+          - link "haplap@gmail.com" [ref=f7e12] [cursor=pointer]:
+            - /url: /customer/info
+        - listitem [ref=f7e13]:
+          - link "Log out" [ref=f7e14] [cursor=pointer]:
+            - /url: /logout
+        - listitem [ref=f7e15]:
+          - link "Shopping cart (1)" [ref=f7e16] [cursor=pointer]:
+            - /url: /cart
+            - generic [ref=f7e17]: Shopping cart
+            - generic [ref=f7e18]: (1)
+        - listitem [ref=f7e19]:
+          - link "Wishlist (0)" [ref=f7e20] [cursor=pointer]:
+            - /url: /wishlist
+            - generic [ref=f7e21]: Wishlist
+            - generic [ref=f7e22]: (0)
+      - generic [ref=f7e24]:
+        - status [ref=f7e25]
+        - textbox [ref=f7e26]: Search store
+        - button "Search" [ref=f7e27] [cursor=pointer]
+    - list [ref=f7e29]:
+      - listitem [ref=f7e30]:
+        - link "Books" [ref=f7e31] [cursor=pointer]:
+          - /url: /books
+      - listitem [ref=f7e32]:
+        - link "Computers" [ref=f7e33] [cursor=pointer]:
+          - /url: /computers
+      - listitem [ref=f7e34]:
+        - link "Electronics" [ref=f7e35] [cursor=pointer]:
+          - /url: /electronics
+      - listitem [ref=f7e36]:
+        - link "Apparel & Shoes" [ref=f7e37] [cursor=pointer]:
+          - /url: /apparel-shoes
+      - listitem [ref=f7e38]:
+        - link "Digital downloads" [ref=f7e39] [cursor=pointer]:
+          - /url: /digital-downloads
+      - listitem [ref=f7e40]:
+        - link "Jewelry" [ref=f7e41] [cursor=pointer]:
+          - /url: /jewelry
+      - listitem [ref=f7e42]:
+        - link "Gift Cards" [ref=f7e43] [cursor=pointer]:
+          - /url: /gift-cards
+    - generic [ref=f7e45]:
+      - heading "Checkout" [level=1] [ref=f7e47]
+      - list [ref=f7e49]:
+        - listitem [ref=f7e50]:
+          - generic [ref=f7e51] [cursor=pointer]:
+            - generic [ref=f7e52]: "1"
+            - heading "Billing address" [level=2] [ref=f7e53]
+            - text: .
+        - listitem [ref=f7e54]:
+          - generic [ref=f7e55]:
+            - generic [ref=f7e56]: "2"
+            - heading "Shipping address" [level=2] [ref=f7e57]
+            - text: .
+          - generic [ref=f7e58]:
+            - generic [ref=f7e61]:
+              - generic [ref=f7e63]:
+                - text: Select a shipping address from your address book or enter a new address.
+                - combobox "Select a shipping address from your address book or enter a new address." [ref=f7e65]:
+                  - option "Mahesh Reddy, pocharam, hyderabad 500088, India" [selected]
+                  - option "New Address"
+              - generic [ref=f7e66]:
+                - paragraph [ref=f7e67]:
+                  - checkbox "In-Store Pickup" [ref=f7e68]
+                  - text: In-Store Pickup
+                - paragraph [ref=f7e69]: Pick up your items at the store (put your store address here)
+            - generic [ref=f7e70]:
+              - paragraph [ref=f7e71]:
+                - link "Back" [ref=f7e72] [cursor=pointer]:
+                  - /url: "#"
+              - button "Continue" [ref=f7e73] [cursor=pointer]
+        - listitem [ref=f7e74]:
+          - generic [ref=f7e75]:
+            - generic [ref=f7e76]: "3"
+            - heading "Shipping method" [level=2] [ref=f7e77]
+            - text: .
+        - listitem [ref=f7e78]:
+          - generic [ref=f7e79]:
+            - generic [ref=f7e80]: "4"
+            - heading "Payment method" [level=2] [ref=f7e81]
+            - text: .
+        - listitem [ref=f7e82]:
+          - generic [ref=f7e83]:
+            - generic [ref=f7e84]: "5"
+            - heading "Payment information" [level=2] [ref=f7e85]
+            - text: .
+        - listitem [ref=f7e86]:
+          - generic [ref=f7e87]:
+            - generic [ref=f7e88]: "6"
+            - heading "Confirm order" [level=2] [ref=f7e89]
+            - text: .
+  - generic [ref=f7e90]:
+    - generic [ref=f7e91]:
+      - generic [ref=f7e92]:
+        - heading "Information" [level=3] [ref=f7e93]
+        - list [ref=f7e94]:
+          - listitem [ref=f7e95]:
+            - link "Sitemap" [ref=f7e96] [cursor=pointer]:
+              - /url: /sitemap
+          - listitem [ref=f7e97]:
+            - link "Shipping & Returns" [ref=f7e98] [cursor=pointer]:
+              - /url: /shipping-returns
+          - listitem [ref=f7e99]:
+            - link "Privacy Notice" [ref=f7e100] [cursor=pointer]:
+              - /url: /privacy-policy
+          - listitem [ref=f7e101]:
+            - link "Conditions of Use" [ref=f7e102] [cursor=pointer]:
+              - /url: /conditions-of-use
+          - listitem [ref=f7e103]:
+            - link "About us" [ref=f7e104] [cursor=pointer]:
+              - /url: /about-us
+          - listitem [ref=f7e105]:
+            - link "Contact us" [ref=f7e106] [cursor=pointer]:
+              - /url: /contactus
+      - generic [ref=f7e107]:
+        - heading "Customer service" [level=3] [ref=f7e108]
+        - list [ref=f7e109]:
+          - listitem [ref=f7e110]:
+            - link "Search" [ref=f7e111] [cursor=pointer]:
+              - /url: /search
+          - listitem [ref=f7e112]:
+            - link "News" [ref=f7e113] [cursor=pointer]:
+              - /url: /news
+          - listitem [ref=f7e114]:
+            - link "Blog" [ref=f7e115] [cursor=pointer]:
+              - /url: /blog
+          - listitem [ref=f7e116]:
+            - link "Recently viewed products" [ref=f7e117] [cursor=pointer]:
+              - /url: /recentlyviewedproducts
+          - listitem [ref=f7e118]:
+            - link "Compare products list" [ref=f7e119] [cursor=pointer]:
+              - /url: /compareproducts
+          - listitem [ref=f7e120]:
+            - link "New products" [ref=f7e121] [cursor=pointer]:
+              - /url: /newproducts
+      - generic [ref=f7e122]:
+        - heading "My account" [level=3] [ref=f7e123]
+        - list [ref=f7e124]:
+          - listitem [ref=f7e125]:
+            - link "My account" [ref=f7e126] [cursor=pointer]:
+              - /url: /customer/info
+          - listitem [ref=f7e127]:
+            - link "Orders" [ref=f7e128] [cursor=pointer]:
+              - /url: /customer/orders
+          - listitem [ref=f7e129]:
+            - link "Addresses" [ref=f7e130] [cursor=pointer]:
+              - /url: /customer/addresses
+          - listitem [ref=f7e131]:
+            - link "Shopping cart" [ref=f7e132] [cursor=pointer]:
+              - /url: /cart
+          - listitem [ref=f7e133]:
+            - link "Wishlist" [ref=f7e134] [cursor=pointer]:
+              - /url: /wishlist
+      - generic [ref=f7e135]:
+        - heading "Follow us" [level=3] [ref=f7e136]
+        - list [ref=f7e137]:
+          - listitem [ref=f7e138]:
+            - link "Facebook" [ref=f7e139] [cursor=pointer]:
+              - /url: http://www.facebook.com/nopCommerce
+          - listitem [ref=f7e140]:
+            - link "Twitter" [ref=f7e141] [cursor=pointer]:
+              - /url: https://twitter.com/nopCommerce
+          - listitem [ref=f7e142]:
+            - link "RSS" [ref=f7e143] [cursor=pointer]:
+              - /url: /news/rss/1
+          - listitem [ref=f7e144]:
+            - link "YouTube" [ref=f7e145] [cursor=pointer]:
+              - /url: http://www.youtube.com/user/nopCommerce
+          - listitem [ref=f7e146]:
+            - link "Google+" [ref=f7e147] [cursor=pointer]:
+              - /url: https://plus.google.com/+nopcommerce
+    - generic [ref=f7e148]:
+      - text: Powered by
+      - link "nopCommerce" [ref=f7e149] [cursor=pointer]:
+        - /url: http://www.nopcommerce.com/
+    - generic [ref=f7e150]: Copyright © 2026 Tricentis Demo Web Shop. All rights reserved.
+```

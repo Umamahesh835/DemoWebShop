@@ -1,0 +1,7 @@
+the product name is : Smartphone
+the cart text is : The product has been added to your shopping cart
+Screenshot captured: biiling
+You will pay by COD
+100.00
+100.00
+400.00

@@ -1,0 +1,2 @@
+the product name is : Smartphone
+the product name is : Used phone
