@@ -8,11 +8,15 @@ test('verify login with valid credentials', async ({
     page,
     homepage,
     loginPage,
+    topcontextMenu,
 }) => {
 
     await page.goto('https://demowebshop.tricentis.com/');
     await homepage.clickLogin();
-    await loginPage.Loginuser('haplap@gmail.com','hp@123');   
+    await loginPage.Loginuser('haplap@gmail.com','hp@123'); 
+    await loginPage.clickLogIn();
+    await expect(topcontextMenu.LogOut).toBeVisible();
+
 })
 
 test('Invalid password', async({page,
