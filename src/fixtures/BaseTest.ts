@@ -14,6 +14,7 @@ import { ShippingMethod } from '../pages/ShippingMethod';
 import { PaymentMethod } from '../pages/PaymentMethod';
 import { paymentInformation } from '../pages/PaymentInformation';
 import { ConfirmOrder } from '../pages/ConfirmOrder';
+import { topContextMenu } from '../pages/topContextMenu';
 
 
 type PageFixtures = {
@@ -32,6 +33,7 @@ type PageFixtures = {
     paymentMethod: PaymentMethod;
     paymentInformation: paymentInformation;
     confirmOrder: ConfirmOrder;
+    topcontextMenu:topContextMenu;
 }
 
 export const test = base.extend<PageFixtures>({
@@ -80,5 +82,8 @@ export const test = base.extend<PageFixtures>({
     },
     confirmOrder: async ({ page }, use) => {
         await use(new ConfirmOrder(page));
+    },
+    topcontextMenu: async ({ page }, use) => {
+        await use(new topContextMenu(page));
     }
 });
